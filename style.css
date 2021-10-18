@@ -1,11 +1,16 @@
 body{
     background-color:tan;
 }
-.cabeza img{
+.cabeza .logo{
     width:60px;
     height:60px;
     vertical-align:middle;
     align-items: left;
+}
+.cabeza .user {
+    float: right;
+    width: 45px;
+    height: 45px;
 }
 .cabeza{
     font-family:sans-serif;
