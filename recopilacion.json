@@ -1,38 +1,32 @@
 {
   "posts": [
     {
-      "title": "Primer Post de mi Blog :)",
-      "author": "admin",
-      "cuerpo": "Este es el primer post de mi blog, en el cual no hablo de nada porque no se que poner",
+      "title": "Mi Primer Post :D",
+      "author": "Admin",
+      "cuerpo": "Este es mi primer post, se vienen cositas pronto ;)",
       "id": 1
     },
     {
       "title": "Cosas del mundo",
-      "author": "admin",
-      "cuerpo": "En el mundo hay muchas cosas las cuales se puedn ver, oir, tocar,sentir... En conclusión, en el mundo hay muchas cosas",
+      "author": "Admin",
+      "cuerpo": "El mundo tiene muchas cosas, no os miento",
       "id": 2
     },
     {
       "title": "Decadencia",
-      "author": "admin",
-      "cuerpo": "Mi post está en decadencia, no recibo visitas y nadie comenta mis post que tanto trabajo me han llevado escribir. Dia triste para el admin del blog",
+      "author": "Admin",
+      "cuerpo": "No recibo comentarios en mis elaborados posts, temo por el futuro de mi blog. Admin triste...",
       "id": 3
     },
     {
-      "title": "Hoy no estoy triste",
-      "author": "admin",
-      "cuerpo": "He recibido un comentario en una publicacion, me siento orgulloso de mi esfuerzo y dedicacion. Admin feliz.",
+      "title": "El admin ya no está triste",
+      "author": "Admin",
+      "cuerpo": "He recibido varios comentarios en mis posts, estoy feliz",
       "id": 4
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
+  "comments": [],
+  "users": {
     "name": "typicode"
   }
 }
