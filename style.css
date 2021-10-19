@@ -64,6 +64,8 @@ h1{
     background-color:lightgoldenrodyellow;
     border-radius: 6px;
     border: 2px solid black;
+    margin-left: 3cm;
+    margin-top: 1cm;
   }
 .formulario button:hover{
     color: white;
@@ -96,4 +98,43 @@ button{
 button:hover{
     color: white;
     background-color: black;
+}
+
+#titulo{
+    font-size: 0.8cm;
+    font-family:sans-serif;
+    font-weight: bold;
+    text-align: center; 
+    margin-top: 2cm;
+}
+#cuerpo{
+    font-size: 0.6cm;
+    font-weight: bold;
+    font-family:sans-serif;
+    margin-top: 5cm;
+    text-align: center;
+}
+#formComent #añadirComent{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    background-color:lightgoldenrodyellow;
+    border-radius: 6px;
+    border: 2px solid black;
+    margin-left: 22cm;
+    margin-top: 1cm;
+}
+#formComent #añadirComent:hover{
+    color: white;
+    background-color: black;
+}
+
+#formComent #TextoComentario{
+    border-radius: 1cm;
+    border-color: black;
+    height: 2cm;
+    width: 12cm;
+    margin-left: 12cm;
+    margin-top: 5cm;
 }

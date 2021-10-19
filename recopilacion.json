@@ -3,7 +3,7 @@
     {
       "title": "Mi Primer Post :D",
       "author": "Admin",
-      "cuerpo": "Este es mi primer post, se vienen cositas pronto ;)",
+      "cuerpo": "Este es mi primer post, se vienen cositas",
       "id": 1
     },
     {
@@ -26,7 +26,14 @@
     }
   ],
   "comments": [],
-  "users": {
-    "name": "typicode"
-  }
+  "users": [
+    {
+      "name": "admin",
+      "id": 1
+    },
+    {
+      "name": "Fran",
+      "id": 2
+    }
+  ]
 }
