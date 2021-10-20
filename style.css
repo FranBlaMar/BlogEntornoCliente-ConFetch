@@ -9,8 +9,9 @@ body{
 }
 .cabeza .user {
     float: right;
-    width: 45px;
-    height: 45px;
+    width: 54
+    px;
+    height: 54px;
     margin-right: 1cm;
     margin-top: 0.2cm;
 }
@@ -46,17 +47,17 @@ h1{
     font-weight: bolder;
     margin-top: 2cm;
 }
-.formulario{
+.formularioUsuario{
     padding: 2cm;
     margin: 0cm;
     font-family: sans-serif;
     font-weight: bold;
 }
-.formulario input{
+.formularioUsuario input{
     border-radius: 1cm;
     border-color: black;
 }
-.formulario button{
+.formularioUsuario button{
     padding: 10px;
     font-weight: 600;
     font-size: 20px;
@@ -67,9 +68,10 @@ h1{
     margin-left: 3cm;
     margin-top: 1cm;
   }
-.formulario button:hover{
+.formularioUsuario button:hover{
     color: white;
     background-color: black;
+    animation:step-end;
 }
 table{
     border: 1px solid #000;
@@ -113,6 +115,19 @@ button:hover{
     font-family:sans-serif;
     margin-top: 5cm;
     text-align: center;
+    
+}
+#formComent{
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.5cm;
+    background-color:lightgoldenrodyellow;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 1cm;
+    font-family:sans-serif;
+    padding-bottom: 0.5cm;
+    padding-top: 0.5cm;
 }
 #formComent #añadirComent{
     padding: 10px;
@@ -122,8 +137,9 @@ button:hover{
     background-color:lightgoldenrodyellow;
     border-radius: 6px;
     border: 2px solid black;
-    margin-left: 22cm;
+    margin-left: 10cm;
     margin-top: 1cm;
+    display: block;
 }
 #formComent #añadirComent:hover{
     color: white;
@@ -135,6 +151,107 @@ button:hover{
     border-color: black;
     height: 2cm;
     width: 12cm;
-    margin-left: 12cm;
-    margin-top: 5cm;
+    margin-left: 7cm;
+    margin-top: 1cm;
+    display: block;
+}
+#formComent select{
+    height: 1cm;
+    width: 3cm;
+    margin-left: 5cm;
+    margin-top: 0.4cm;
+    text-align: center;
+    border-radius: 1cm;
+    display: block;
+}
+.CuerpoComent{
+    font-size: 0.5cm;
+
+}
+.AutorComent{
+    font-family:sans-serif;
+    font-weight: bolder;
+    margin-top: 0.5cm; 
+}
+.fechaComent{
+    font-family:sans-serif;
+    font-weight: bolder;
+    margin-top: 0.5cm; 
+}
+#formPost{
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.5cm;
+    background-color:lightgoldenrodyellow;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 1cm;
+    font-family:sans-serif;
+    padding-bottom: 0.5cm;
+    padding-top: 0.5cm;
+    margin-top: 1cm;
+}
+
+#formPost select{
+    height: 1cm;
+    width: 3cm;
+    margin-left: 5cm;
+    margin-top: 0.4cm;
+    margin-bottom: 0.6cm;
+    text-align: center;
+    border-radius: 1cm;
+    display: block;
+}
+#formPost #añadirPost{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    background-color:lightgoldenrodyellow;
+    border-radius: 6px;
+    border: 2px solid black;
+    margin-left: 10cm;
+    margin-top: 1cm;
+    display: block;
+}
+#formPost #añadirPost:hover{
+    color: white;
+    background-color: black;
+}
+
+#formPost #CuerpoPost{
+    border-radius: 1cm;
+    border-color: black;
+    height: 2cm;
+    width: 15cm;
+    margin-left: 5cm;
+    margin-top: 1cm;
+    display: block;
+}
+#formPost #TituloPost{
+    border-radius: 1cm;
+    border-color: black;
+    height: 0.5cm;
+    width: 7cm;
+    display: block;
+    margin-left: 9cm;
+}
+#formPost #CuerpoPost{
+    border-radius: 1cm;
+    border-color: black;
+    height: 2cm;
+    width: 15cm;
+    margin-left: 5cm;
+    margin-top: 1cm;
+    display: block;
+}
+
+#formPost #CuerpoPost{
+    border-radius: 1cm;
+    border-color: black;
+    height: 2cm;
+    width: 15cm;
+    margin-left: 5cm;
+    margin-top: 1cm;
+    display: block;
 }

@@ -64,7 +64,17 @@ function validarFormulario (){
     let datos = Object.values(validar);
     let valido = datos.findIndex(valor => valor == false);
     if (valido == -1) {
-        formulario.submit();
+        const datosUser={
+            usuario: document.getElementById("nombre").value,
+            cuerpo: document.getElementById("email").value,
+            idPost: document.getElementById("fecha").value,
+            dni: document.getElementById("dni").value,
+        }
+        let peticion = new XMLHttpRequest();
+        peticion.open("POST", `http://localhost:3000/users`);
+        peticion.setRequestHeader('Content-type', 'application/json');
+        peticion.send(JSON.stringify(datosUser));
+        location.reload();
     }
     else{
         alert("Formulario no valido\nCompruebe los datos");

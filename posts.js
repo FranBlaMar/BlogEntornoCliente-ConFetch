@@ -37,8 +37,8 @@ peticion.addEventListener("readystatechange",function(){
                     location.href=`ver.html?id=${datos[i].id}`;
                 });
                 //------------------------------------------------------//
-                tr.appendChild(titulo);
                 tr.appendChild(autor);
+                tr.appendChild(titulo);
                 tr.appendChild(acciones);
 
                 //Añadimos finalmente el TR a la tabla
@@ -66,4 +66,42 @@ function borrarPost (e){
             }
         }
     })
+}
+
+
+let peticion1 = new XMLHttpRequest();
+peticion1.open("GET", `http://localhost:3000/users`);
+peticion1.send();
+peticion1.addEventListener("load",function(){
+    if(peticion1.status == 200){
+        let usuarios = JSON.parse(peticion1.responseText);
+        usuarios.forEach(dato=>{
+            let select = document.getElementById("users");
+            let option = document.createElement("option");
+            option.value = dato.nombre.toUpperCase();
+            option.innerHTML=`${dato.nombre.toUpperCase()}`;
+            select.appendChild(option);
+        });
+    }
+})
+
+let botonPost = document.getElementById("añadirPost");
+botonPost.addEventListener("click",añadirPost);
+let formulario = document.getElementById("formPost");
+formulario.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    añadirPost();
+})
+
+function añadirPost(){
+    const datosPost={
+        title: document.getElementById("TituloPost").value,
+        author: document.getElementById("users").value,
+        cuerpo: document.getElementById("CuerpoPost").value,
+    }
+    let peticion = new XMLHttpRequest();
+    peticion.open("POST", `http://localhost:3000/posts`);
+    peticion.setRequestHeader('Content-type', 'application/json');
+    peticion.send(JSON.stringify(datosPost));
+    formulario.reload();
 }
