@@ -29,6 +29,12 @@
       "author": "FRAN",
       "cuerpo": "Hola, este es mi post. Voy a ser mejor que el admin. ",
       "id": 5
+    },
+    {
+      "title": "Post de Prueba",
+      "author": "PRUEBA",
+      "cuerpo": "Esto es una prueba",
+      "id": 6
     }
   ],
   "comments": [
@@ -73,13 +79,6 @@
       "fecha": "Wed Oct 20 2021",
       "idPost": "5",
       "id": 6
-    },
-    {
-      "usuario": "ADMIN",
-      "cuerpo": "adfasdfa",
-      "fecha": "Wed Oct 20 2021",
-      "idPost": "6",
-      "id": 7
     }
   ],
   "users": [
